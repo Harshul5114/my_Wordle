@@ -2,7 +2,7 @@ import json
 import random
 
 def load_words():
-    with open(r'Wordle\words_dictionary.json') as word_file:
+    with open('words_dictionary.json') as word_file:
 
         word_dict = json.load(word_file)
         valid_words = set(word_dict.keys())
